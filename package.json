@@ -1,0 +1,13 @@
+{
+  "name": "gold-rush",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Elisée Maurer <elisee@sparklinlabs.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.1",
+    "socket.io": "^1.3.5",
+    "socket.io-client": "^1.3.5"
+  }
+}
