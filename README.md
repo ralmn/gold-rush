@@ -6,6 +6,7 @@ You'll need [Node.js](https://nodejs.org/).
 
 ```
 npm install typescript -g
+npm install watchify -g
 ```
 
 ### Client
