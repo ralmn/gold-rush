@@ -1,16 +1,25 @@
 # Gold Rush
 
-## Building the client
+## Development
 
-    cd client/
-    tsc
-    watchify index.js -o ../public/index.js
+You'll need [Node.js](https://nodejs.org/).
 
-## Building the server
+```
+npm install typescript -g
+```
+
+### Client
+
+```
+cd client/
+tsc
+watchify index.js -o ../public/index.js
+```
+
+### Server
     
-    cd server/
-    tsc
-
-And run it with:
-
-    node .
+```
+cd server/
+tsc
+node .
+```
