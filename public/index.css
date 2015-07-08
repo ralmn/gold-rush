@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  font-family: Arial;
+}
+
+body > header {
+  display: flex;
+  background: #e66;
+  align-items: center;
+}
+
+body > header > h1 {
+  flex: 1;
+  margin: 0;
+}
+
+.page {
+  flex: 1;
+  display: flex;
+}
+
+.page > .left, .page > .right {
+  background: #eee;
+  width: 250px;
+}
+
+body > .page > main {
+  flex: 1;
+}
