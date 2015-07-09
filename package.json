@@ -13,5 +13,8 @@
   "devDependencies": {
     "typescript": "1.5.0-alpha",
     "watchify": "^3.2.3"
+  },
+  "scripts": {
+    "watch-client": "watchify client/index.js -o public/index.js"
   }
 }
