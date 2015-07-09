@@ -7,21 +7,34 @@
     <header>
       <h1>Gold Rush</h1>
       
-      <div class="settlement">
-        <select>
-          <option>Settlement</option>
-        </select>
-      </div>
-      <div class="faction">Faction</div>
-      
-      <div class="buttons">
-        <button>Invite</button>
-        <button>Leave</button>
-        <button>Log in/out</button>
+      <div class="user" hidden>
+        <div class="settlement">
+          <select>
+            <option>Settlement</option>
+          </select>
+        </div>
+        <div class="faction">Faction</div>
+        
+        <div class="buttons">
+          <button>Invite</button>
+          <button>Leave</button>
+          <button>Log in/out</button>
+        </div>
       </div>
     </header>
+    
+    <div class="connecting">
+      Connecting...
+    </div>
+    
+    <div class="start" hidden>
+      <form>
+        <input type="text" placeholder="Your name" />
+        <input type="submit" value="OK" />
+      </form>
+    </div>
 
-    <div class="page">
+    <div class="game" hidden>
       <div class="left">
         <div class="resources">
           <table>

@@ -13,6 +13,12 @@ app.use("/", express.static("../public"));
 let server = http.createServer(app);
 let io = sio(server);
 
+io.on("connection", (socket) => {
+  socket.emit("welcome", null);
+  
+  socket.on("setDisplayName", (displayName: string) => { log(socket.id, displayName); })
+});
+
 server.listen(app.get("port"), () => {
   log(`Server started on port ${app.get("port")}.`);
 });

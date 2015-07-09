@@ -24,16 +24,36 @@ body > header > h1 {
   margin: 0;
 }
 
-.page {
-  flex: 1;
+body > header .user:not([hidden]) {
   display: flex;
+  align-items: center;
 }
 
-.page > .left, .page > .right {
+/* Connecting */
+body > .connecting:not([hidden]) { display: flex; }
+body > .connecting {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Start */
+body > .start:not([hidden]) { display: flex; }
+body > .start {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Game */
+.game:not([hidden]) { display: flex; }
+.game { flex: 1; }
+
+.game > .left, .game > .right {
   background: #eee;
   width: 250px;
 }
 
-body > .page > main {
+body > .game > main {
   flex: 1;
 }

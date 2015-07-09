@@ -1,6 +1,3 @@
-import * as io from "socket.io-client";
+/// <reference path="../gold-rush.d.ts" />
 
-let socket = io.connect(null, { transports: [ "websocket" ], reconnect: false });
-
-socket.on("connect", () => {
-});
+import "./network";
